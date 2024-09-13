@@ -1,0 +1,22 @@
+.main {
+    /* padding: 10px; */
+}
+
+.filterProducts {
+    display: flex;
+}
+
+.filter {
+    width: 28vw;
+    padding: 10px;
+}
+
+.filterCollapse {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .filter {
+        display: none;
+    }
+}

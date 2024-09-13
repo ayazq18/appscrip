@@ -1,0 +1,54 @@
+
+
+.customizable {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 15px 0 15px 0;
+  border-bottom: 1px solid rgba(160, 152, 152, 0.466);
+}
+
+.customizCheckBoz {
+  cursor: pointer;
+}
+
+.ideal {
+  height: auto;
+}
+
+.comman {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
+  padding: 20px 0 20px 0;
+  border-bottom: 1px solid rgba(160, 152, 152, 0.466);
+  cursor: pointer;
+}
+
+.comman h4 {
+  font-size: 15px;
+}
+
+.comman span {
+  font-size: 12px;
+}
+
+.dropDownContainer {
+  width: 100%;
+  height: 200px;
+  margin-top: 10px;
+}
+
+.dropDownContainer h4 {
+  color: gray;
+  font-weight: 400;
+  text-decoration: underline;
+}
+
+.dropDownOptions {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 15px 0 15px 0;
+}

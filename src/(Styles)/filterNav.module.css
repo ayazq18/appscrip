@@ -1,0 +1,53 @@
+.main {
+    width: 100%;
+    border-top: 1px solid rgba(153, 148, 148, 0.301);
+    border-bottom: 1px solid rgba(153, 148, 148, 0.301);
+    padding: 10px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.filterControl {
+    width: 19vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mobileFilterControl {
+    display: none;
+}
+
+.filterControl h6 {
+    color: gray;
+    text-wrap: nowrap;
+    text-decoration: underline; 
+    cursor: pointer;
+}
+
+.customSelect {
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 8px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #000;
+}
+
+@media (max-width: 768px) {
+    .mobileFilterControl {
+        width: 45vw;
+        display: block;
+        font-size: 19px;
+        font-weight: 900;
+        text-align: center;
+        border-right: 1px solid rgba(128, 128, 128, 0.342);
+    }
+
+    .filterControl {
+        display: none;
+    }
+}

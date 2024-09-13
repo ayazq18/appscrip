@@ -1,0 +1,198 @@
+.main {
+    width: 80vw;
+    padding: 10px;
+}
+
+.mainCollapse {
+    width: 100vw;
+    padding: 10px;
+}
+
+.card {
+    width: 300px;
+    height: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1),
+        0 6px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: box-shadow 0.3s ease-in-out;
+    position: relative;
+
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15),
+        0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.cardImg {
+    height: 70%;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.288);
+}
+
+.cardImg img {
+    width: 70%;
+
+}
+
+.infoContainer {
+    margin: 10px;
+}
+
+.infoContainer h4 {
+    width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.desc {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.desc h6 {
+    width: 220px;
+    font-weight: 400;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.gridContainer {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 20px;
+}
+
+.pricing {
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pricing h6 {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.category {
+    position: absolute;
+    top: 0;
+    padding: 5px;
+    font-size: 10px;
+    background-color: bisque;
+}
+
+/* -------Modal----- */
+/* Modal Styles */
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    cursor: pointer;
+}
+
+.modalContent {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    max-width: 90%;
+    position: relative;
+}
+
+.modalHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modalBody {
+    margin-top: 10px;
+}
+
+.modalHeader button {
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.cart {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.cart button {
+    padding: 10px;
+    background-color: red;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    color: #fff
+}
+
+
+@media (max-width: 728px) {
+    .gridContainer {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0px;
+        gap: 8px;
+    }
+
+    .main {
+        padding: 0;
+        padding-top: 10px;
+    }
+
+    .card {
+        width: 190px;
+        height: 310px;
+    }
+
+    .cardImg img {
+        width: 90%;
+        height: 90%;
+
+    }
+
+    .infoContainer h4 {
+        width: 100px;
+        font-size: 13px;
+    }
+
+    .desc h6 {
+        width: 130px;
+        font-weight: 400;
+    }
+
+    .pricing h6 {
+        font-size: 14px;
+        font-weight: 700;
+    }
+
+    .pricing span {
+        font-size: 14px;
+        /* font-weight: 700; */
+    }
+}

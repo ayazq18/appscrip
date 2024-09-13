@@ -1,0 +1,253 @@
+.main {
+    width: 100%;
+    background-color: black;
+    padding-bottom: 10px;
+    margin-top: 40px;
+}
+
+.containerOne,
+.containerTwo {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.secOne {
+    width: 50%;
+    height: 210px;
+    padding: 40px 10px 10px 50px;
+    border-bottom: 1px solid gray;
+    color: #fff;
+}
+
+.secTwo {
+    width: 50%;
+    height: 210px;
+    padding: 40px 10px 10px 50px;
+    border-bottom: 1px solid gray;
+    color: #fff;
+}
+
+.secOne h4 {
+    font-size: 15px;
+    padding-bottom: 20px;
+
+}
+
+.secOne span {
+    font-size: 12px;
+    padding-top: 30px;
+}
+
+.mailContainer {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+.mailContainer input {
+    padding: 8px;
+    width: 60%;
+    background-color: #fff;
+}
+
+.mailContainer button {
+    padding: 8px 25px 8px 25px;
+    background-color: #000;
+    border: 1px solid gray;
+    border-radius: 5px;
+    color: gray;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.secTwo h6 {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.secTwo h4 {
+    margin-top: 10px;
+}
+
+.country {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 13px;
+    position: relative;
+    margin-top: 10px;
+}
+
+.secTwo h1 {
+    position: absolute;
+    bottom: 0px;
+    left: 22px;
+}
+
+.secTwo span {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.callUs,
+.mobCountry {
+    display: none;
+}
+
+.secThree {
+    width: 20%;
+    color: #fff;
+    padding: 40px;
+}
+
+.secThree h4,
+.secFour h4 {
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.secThree h6,
+.secFour h6 {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.secFour {
+    width: 30%;
+    color: #fff;
+    padding: 40px;
+}
+
+.secFive {
+    width: 40%;
+    color: #fff;
+    padding: 40px;
+}
+
+.socialIcon {
+    border: 1px solid #fff;
+    padding: 2px;
+    border-radius: 100%;
+    margin: 10px 8px 10px 0;
+}
+
+.followUs {
+    display: flex;
+    align-items: center;
+}
+
+.paymentMethods {
+    margin-top: 20px;
+}
+
+.paymentCards {
+    width: 30px;
+    height: 20px;
+    margin: 10px 8px 10px 0;
+    background-color: #fff;
+    color: #ec0f0f;
+    border-radius: 4px;
+}
+
+.footerTitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.arrowDown {
+    display: none;
+}
+
+.copyRight{
+    width: 100vw;
+    /* margin-top: 80px; */
+    text-align: center;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+
+    /* .containerOne{
+       display: block;
+    } */
+    .main {
+        padding-bottom: 10px;
+    }
+    
+    .secOne {
+        width: 100%;
+        padding: 40px 10px 10px 20px;
+    }
+
+    .secTwo {
+        display: none;
+    }
+
+    .callUs {
+        display: block;
+        color: #fff;
+        padding: 20px;
+        width: 100vw;
+        border-bottom: 1px solid gray;
+    }
+
+    .callUs h4 {
+        margin-bottom: 20px;
+    }
+
+    .callUs span {
+        font-size: 13px;
+    }
+
+    .contactUs {
+        display: none;
+    }
+
+    .mobCountry {
+        display: block;
+        color: #fff;
+        width: 100vw;
+        padding: 20px;
+        border-bottom: 1px solid gray;
+    }
+
+    .mobCountryContainer {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 13px;
+        position: relative;
+        margin-top: 10px;
+    }
+
+    .mobCountry h1 {
+        position: absolute;
+        bottom: 0px;
+        left: 22px;
+    }
+
+    .secThree,
+    .secFour, .secFive {
+        width: 100%;
+        height: 50px;
+        border-bottom: 1px solid gray;
+        padding: 20px;
+    }
+
+    .secThree h6, .secFour h6, .secFive h6, .followUs{
+        display: none;
+    }
+
+    .arrowDown {
+        display: block;
+    }
+    .copyRight{
+        margin-top: 80px;
+    }
+}
